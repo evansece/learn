@@ -1,0 +1,135 @@
+body {
+    margin:0;
+    padding: 0;
+}
+/*header*/
+header {
+    
+    width:100%;
+    height: 50px;
+    background-color:#515151;
+    margin:0;
+}
+header div {
+    font-size: 20px;
+    font-family: sans-serif;
+    width:960px;
+    margin:auto;
+}
+header article {
+    float: left;
+    margin-top:10px;
+    color:white;
+}
+header  ul {
+    float:right;
+    margin-top:-10px;
+    list-style-type: none;
+}
+header li {
+    float:left;
+    padding:20px;
+}
+header li a {
+    color:#FFFFFF;
+}
+/*baaner*/
+#banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color:#32CD32;
+}
+.page01,
+.page02,
+.page03,
+.page04 {
+    position: absolute;
+    bottom:10px;
+    width: 20px;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    border:1px solid #999999;
+    background-color:#EEEEEE;
+    cursor:pointer;
+}
+.page01 {
+    right:290px;
+}
+.page02 {
+    height:50px;
+    right:260px;
+}
+.page03 {
+    right:230px;
+}
+.page04 {
+    right:200px;
+}
+/*nav*/
+.main {
+    width:100%;
+    height:60px;
+    border-bottom: 1px solid #CCC;
+}
+.nav-main {
+   width:960px;
+   height:60px;
+   margin:0 auto;
+}
+.nav-home,
+.nav-profile,
+.nav-about {
+    float:left;
+    box-sizing: border-box;
+    margin-top:16px;
+    width:100px;
+    height:45px;
+    text-align: center;
+    line-height:45px;
+    border: 1px solid #CCC;
+    border-bottom:none;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    background-color:#fff;
+    cursor: pointer;
+}
+.nav-profile,
+.nav-about {
+    background-color:#DDD;
+}
+/*content*/
+#content {
+    width:960px;
+    margin:10px auto;
+}
+.row {
+    display:flex;
+}
+.cell {
+    flex:1 1 auto;
+    border: 1px solid #CCC;
+    box-sizing:border-box;
+    text-align: center;
+    margin:5px;
+    min-width:200px;
+    height:160px;
+    line-height:160px;
+    box-shadow: 0 0 5px #DDD;
+}
+/*
+.row:nth-child(1) .cell:nth-child(1),
+.row:nth-child(1) .cell:nth-child(2){
+    flex: 0 0 34%;
+}*/
+#footer {
+    width:100%;
+    height:100px;
+    background-color:#888888;
+    color:#fff;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top:20px;
+}
+
