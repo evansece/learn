@@ -1,0 +1,722 @@
+body {
+    width: 2000px;
+    height: 100%;
+}
+.all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+/*左侧菜单*/
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 1020px;
+    background-color: #E0EEEE;
+}
+/*primary*/
+.menu .primary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100px;
+    height: 100%;
+    background-color: #082E54;
+}
+.Item_1,
+.Item_2,
+.Item_3,
+.Add {
+    width: 60px;
+    height:60px;
+    margin: 20px;
+}
+.bottomactions {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 60px;
+}
+.bottomactions img {
+    padding-right: 10px;
+}
+/*secondary*/
+.secondary {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 260px;
+    height: 100%;  
+}
+.divider{
+    margin-left: 40px;
+}
+.part_1,
+.part_2,
+.part_3 {
+    height: 280px;
+}
+.secondary span {
+    color: #000000;
+}
+.secondary ul {
+    list-style: none;
+}
+.secondary li {
+    padding-top: 20px;
+}
+.secondary li a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #C5C1AA;
+}
+.part_1 .right img:nth-child(1) {
+    position: absolute;
+    top: 34px;
+    right: 30px;
+}
+.part_1 .right img:nth-child(2) {
+    position: absolute;
+    top: 110px;
+    right: 30px;
+}
+.part_2 .right img {
+    position: absolute;
+    top: 324px;
+    right: 40px;
+}
+.part_3 .right img:nth-child(1) {
+    position: absolute;
+    top: 630px;
+    right: 40px;
+}
+.part_3 .right img:nth-child(2) {
+    position: absolute;
+    top: 675px;
+    right: 40px;
+}
+.part_3 .right img:nth-child(3) {
+    position: absolute;
+    top: 755px;
+    right: 40px;
+}
+/*secondary 下方*/
+.Monthly_Goals {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #BFBFBF;
+    position: absolute;
+    left: 300px; 
+    top: 950px;
+    left: 40px;
+}
+._580 {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #BFBFBF;
+    position: absolute;
+    top: 950px;
+    left: 145px;
+}
+.fill {
+    background-image: url(images/Fill.png);
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    left: 40px;
+    top: 993px;
+}
+.base {
+    background-image: url(images/Base.png);
+    width: 180px;
+    height: 4px;
+    position: absolute;
+    left: 40px;
+    top: 993px;
+}
+/*右侧上方*/
+.top {
+    flex: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 360px);
+    height: 75px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.Messages {
+    float: left;
+    font-size: 20px;
+    margin: 20px;
+}
+.Personal {
+    margin-left: 660px;
+}
+.Personal img {
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    padding-right: 10px;
+}
+.name {
+    position: absolute;
+    right: 40px;
+    padding-right: 15px;
+}
+.name p:nth-child(1) {
+    font-size: 14px;
+    color: #03a89E;
+}
+.name p:nth-child(2) {
+    font-size: 12px;
+    color: #CCCCCC;
+}
+.dropdown {
+    position: absolute;
+    top: 30px;
+    right: -120px;
+}
+/*右侧聊天部分*/
+.Section {
+    flex: 1;
+    display: flex;
+}
+.Section1 {
+    display: flex;
+    width: 400px;
+    height: 945px;
+    position: absolute;
+    top: 75px;
+    left: 360px;
+}
+.chats {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.search {
+    flex: 1;
+    border:1px solid #CCCCCC;
+}
+form {
+    margin: 10px 40px;
+}
+input {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background: url("images/Search_icon.png") no-repeat 95% 30%;
+}
+.chat_1,
+.chat_2,
+.chat_3,
+.chat_4,
+.chat_5,
+.chat_6,
+.chat_7 {
+    flex: 2;
+    position: relative;
+    height: 120px;
+    border: 1px solid #CCCCCC;
+}
+/*chat01*/
+.chat_1>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+}
+.chat_1 .avatar {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 200px;
+    height: 40px;
+}
+.chat_1 .avatar img:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+.chat_1 .avatar p:nth-child(3) {
+    position: absolute;
+    top: -12px;
+    left: 72px;
+    font-size: 16px;
+    color: #03a89E;
+}
+.chat_1 .avatar p:nth-child(4) {
+    position: absolute;
+    top: 16px;
+    left: 60px;
+    font-size: 12px;
+    color: #808A87;
+}
+.chat_1 .avatar p:nth-child(5) {
+    position: absolute;
+    top: -10px;
+    left: 340px;
+    font-size: 16px;
+    color: #666666;
+}
+.chat_1 .status p {
+    font-size: 12px;
+    color: #808A87;
+    padding-top: 60px;
+    padding-left: 20px;
+    width: 320px;
+    line-height: 1.5;
+}
+.chat_1 .status img {
+    position: absolute;
+    top: 80px;
+    left: 360px;
+}
+/*chat02*/
+.chat_2 img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chat_2 p:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    font-size: 16px;
+    color: #666666;
+}
+.chat_2 p:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    font-size: 12px;
+    color: #808A87;
+}
+.chat_2 p:nth-child(4) {
+    font-size: 12px;
+    color: #808A87;
+    padding-top: 60px;
+    padding-left: 20px;
+    width: 340px;
+    line-height: 1.5;
+}
+.chat_2 p:nth-child(5) {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    font-size: 16px;
+    color: #666666;
+}
+/*chat03*/
+.chat_3 img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chat_3 p:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    font-size: 16px;
+    color: #666666;
+}
+.chat_3 p:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    font-size: 12px;
+    color: #808A87;
+}
+.chat_3 p:nth-child(4) {
+    font-size: 12px;
+    color: #808A87;
+    padding-top: 60px;
+    padding-left: 20px;
+    width: 340px;
+    line-height: 1.5;
+}
+.chat_3 p:nth-child(5) {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    font-size: 16px;
+    color: #666666;
+}
+/*chat04*/
+.chat_4 img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chat_4 p:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    font-size: 16px;
+    color: #666666;
+}
+.chat_4 p:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    font-size: 12px;
+    color: #808A87;
+}
+.chat_4 p:nth-child(4) {
+    font-size: 12px;
+    color: #808A87;
+    padding-top: 60px;
+    padding-left: 20px;
+    width: 340px;
+    line-height: 1.5;
+}
+.chat_4 p:nth-child(5) {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    font-size: 16px;
+    color: #666666;
+}
+/*chat05*/
+.chat_5 img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chat_5 p:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    font-size: 16px;
+    color: #666666;
+}
+.chat_5 p:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    font-size: 12px;
+    color: #808A87;
+}
+.chat_5 p:nth-child(4) {
+    font-size: 12px;
+    color: #808A87;
+    padding-top: 60px;
+    padding-left: 20px;
+    width: 340px;
+    line-height: 1.5;
+}
+.chat_5 p:nth-child(5) {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    font-size: 16px;
+    color: #666666;
+}
+/*chat06*/
+.chat_6 img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chat_6 p:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    font-size: 16px;
+    color: #666666;
+}
+.chat_6 p:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    font-size: 12px;
+    color: #808A87;
+}
+.chat_6 p:nth-child(4) {
+    font-size: 12px;
+    color: #808A87;
+    padding-top: 60px;
+    padding-left: 20px;
+    width: 340px;
+    line-height: 1.5;
+}
+.chat_6 p:nth-child(5) {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    font-size: 16px;
+    color: #666666;
+}
+/*chat07*/
+.chat_7 img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chat_7 p:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    font-size: 16px;
+    color: #666666;
+}
+.chat_7 p:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    font-size: 12px;
+    color: #808A87;
+}
+.chat_7 p:nth-child(4) {
+    font-size: 12px;
+    color: #808A87;
+    padding-top: 60px;
+    padding-left: 20px;
+    width: 340px;
+    line-height: 1.5;
+}
+.chat_7 p:nth-child(5) {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    font-size: 16px;
+    color: #666666;
+}
+/*Section2*/
+.Section2 {
+    flex: 1;
+    display: flex;
+    width: calc(100% - 760px);
+    height: 945px;
+    position: absolute;
+    top: 75px;
+    left: 760px;
+}
+.profile {
+    flex: 1;
+    height: 65px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.profile img:nth-child(1) {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.profile img:nth-child(2) {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+}
+.profile img:nth-child(3) {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.open_chat {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 65px;
+    left: 0;
+}
+.open_chat_1,
+.open_chat_2,
+.open_chat_3 {
+    flex: 1;
+    position: relative;
+    height: 400px;
+}
+.open_chat_1 .img img:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.open_chat_1 .img img:nth-child(2) {
+    position: absolute;
+    top: 170px;
+    left: 20px;
+}
+.open_chat_1 .para p:nth-child(1),
+.open_chat_1 .para p:nth-child(4) {
+    font-size: 14px;
+    color: #000000;
+}
+.open_chat_1 .para p:nth-child(2),
+.open_chat_1 .para p:nth-child(5) {
+    font-size: 14px;
+    color: #666666;
+    width: 100px;
+}
+.open_chat_1 .para p:nth-child(3),
+.open_chat_1 .para p:nth-child(6) {
+    font-size: 14px;
+    color:#808A87;
+    min-width: 500px;
+}
+.open_chat_1 .para p:nth-child(1) {
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    width: 100px;
+}
+.open_chat_1 .para p:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+}
+.open_chat_1 .para p:nth-child(3) {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    line-height: 1.5;
+}
+.open_chat_1 .para p:nth-child(4) {
+    position: absolute;
+    top: 160px;
+    left: 90px;
+    width: 150px;
+}
+.open_chat_1 .para p:nth-child(5) {
+    position: absolute;
+    top: 160px;
+    left: 250px;
+}
+.open_chat_1 .para p:nth-child(6) {
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    line-height: 1.5;
+}
+.divider2 {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+/*open_chat_2*/
+.open_chat_2 {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+.open_chat_2 .img img:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.open_chat_2 .img img:nth-child(2) {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+.open_chat_2 .para p:nth-child(1),
+.open_chat_2 .para p:nth-child(4) {
+    font-size: 14px;
+    color: #000000;
+}
+.open_chat_2 .para p:nth-child(2),
+.open_chat_2 .para p:nth-child(5) {
+    font-size: 14px;
+    color: #666666;
+    width: 100px;
+}
+.open_chat_2 .para p:nth-child(3),
+.open_chat_2 .para p:nth-child(6) {
+    font-size: 14px;
+    color:#808A87;
+    min-width: 500px;
+}
+.open_chat_2 .para p:nth-child(1) {
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    width: 100px;
+}
+.open_chat_2 .para p:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+}
+.open_chat_2 .para p:nth-child(3) {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    line-height: 1.5;
+}
+.open_chat_2 .para p:nth-child(4) {
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    width: 150px;
+}
+.open_chat_2 .para p:nth-child(5) {
+    position: absolute;
+    top: 120px;
+    left: 250px;
+}
+.open_chat_2 .para p:nth-child(6) {
+    position: absolute;
+    top: 150px;
+    left: 90px;
+    line-height: 1.5;
+}
+.open_chat_2 .para img:nth-child(7) {
+    position: absolute;
+    top: 280px;
+    left: 100px;
+}
+.open_chat_2 .para img:nth-child(8) {
+    position: absolute;
+    top: 280px;
+    left: 300px;
+}
+.divider3 {
+    position: absolute;
+    top: 400px;
+    left: 0;
+}
+/*open chat 3*/
+.open_chat_3 {
+    position: absolute;
+    top: 700px;
+    left: 0;
+}
+.open_chat_3 .img img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.open_chat_3 .para p:nth-child(1) {
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    width: 100px;
+    font-size: 14px;
+    color: #000000;
+}
+.open_chat_3 .para p:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    font-size: 14px;
+    color: #666666;
+    width: 100px;
+}
+.open_chat_3 .para p:nth-child(3) {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    line-height: 1.5;
+    font-size: 14px;
+    color:#808A87;
+    min-width: 500px;
+}
+.open_chat_3 .input {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
