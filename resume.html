@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+        <link rel="stylesheet"  href="style_2.css">
+        <style>
+                .js {
+                       float: right;
+                       width: 400px;
+                       height: 200px;
+                       background-color: aqua;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="js">
+                <button id="hello" type="button" onclick="sayhello">你好</button>
+                <button id="hobby" type="button" onclick="myhobby">我的爱好</button>
+                <button id="more" type="button" onclick="learnmore">了解更多</button>
+                <p id="message">信息</p>
+        </div> 
+        <div id="leftdiv">
+                <div id="head">
+                        <p id="headp">简历</p>
+                </div>   
+        </div>
+        <div id="content">
+        <p class="left">基本信息</p>
+        <div class="div"> 
+            <ul>
+            <li><span>姓名</span>  张三</li>
+            <li><span>性别</span>  男</li>
+            <li><span>应聘职位</span>  Web前端工程师</li>
+            </ul>
+        </div>
+        </div>
+        <div id="content">
+                <p  class="left">联系方式</p>
+        <div class="div">
+            <ul>
+                <li><span>手机</span> 1231231234</li>
+                <li><span>Email</span> <a href="mailto:joinene@baidu.com">joinene@baidu.com</a></li>
+                <li><span>个人主页</span> <a href="https://github.com/">GitHub</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="content">
+                <p class="left">能力描述</p>
+        <div class="div">
+                <p><span>技术能力</span></p>
+                <p>熟练掌握HTML，CSS，JavaScript</p>
+                <p><span>综合能力</span></p>
+                <p>良好的沟通，主动积极，努力勤奋</p> 
+        </div>
+        </div>
+        <div id="content">
+                <p  class="left">教育经历</p>
+        <div class="div">
+               <p><span>本科</span></p>
+               <p>百度前端技术学院小薇学院</p>
+               <p><span>研究生</span></p>
+               <p>百度前端技术学院大斌学院</p>
+        </div>
+        </div>
+        <div id="content">
+                <p  class="left">项目经历</p>
+        <div class="div">
+                <p><span>小度小度</span></p>
+                <p>作为前端工程师角色参与了ABC组件的开发</p>
+                <p><span>SAN Doc</span></p>
+                <p>作为文档工程师参与了SANDoc编写</p>
+        </div>
+        </div>
+        <script>
+                var hello = document.getElementById(id = "hello");
+                var hobby = document.getElementById(id = "hobby");
+                var message = document.getElementById(id = "message");
+                var more = document.getElementById(id = "more");
+
+                hello.addEventListener('click',sayhello);
+                hobby.addEventListener('click',myhobby);
+                more.addEventListener('click',learnmore);
+
+                function sayhello(){
+                        message.textContent = '';
+                        message.textContent = '很高兴 : ) 能遇见你！';
+                }
+                function myhobby(){
+                        message.textContent = '';
+                        var hobbiesArray = ['电影','美食','舞蹈','单机游戏']
+                        for(var i = 0; i < hobbiesArray.length; i++)
+                         {
+                        var listItem = document.createElement('li');
+                        listItem.textContent = hobbiesArray[i];
+                        message.appendChild(listItem);
+                    }
+                }
+                function learnmore(){
+                        message.textContent = '展示一段特殊内容';
+                }
+        </script>
+    </body>
+</html>

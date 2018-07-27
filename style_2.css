@@ -1,0 +1,44 @@
+*{margin: 0; 
+    padding: 0;}
+ #headp {float: left;
+        padding-left: 30px;
+        padding-top:10px;
+        font-size: 50px;
+        color:white;
+        }
+#leftdiv {
+    float:left;
+    width:15%;
+    margin-right:10px;
+    height: 800px;
+    text-align: center;
+    background-color: #87CEFA;
+    color:white;
+}
+#content {
+    width:80%;
+    margin-bottom:100px;
+}
+.left {
+padding-left: 20px;
+padding-bottom: 20px;
+font-weight: bold;
+font-size: 20px;
+}
+.div {
+    width:70%;
+    font-size: 15px;
+    float:left;
+    display: block;
+    
+}
+
+ li {float: left;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-right:30px;
+}
+
+span {font-weight: bold;
+
+}
